@@ -1,1 +1,62 @@
-export const data = ["Marcin","Ewa","Marek","Monika","Marcin","Marek","Marek","Maciek","Marek","Karol","Maciek","Marek","Marek","Maciek","Monika","Marek","Marek","Maciek","Monika","Adam","Marcin","Maciek","Maciek","Maciek","Karol","Marek","Karol","Marek","Adam","Monika","Marek","Adam","Marcin","Marcin","Karol","Monika","Marek","Adam","Monika","Adam","Maciek","Maciek","Monika","Marcin","Maciek","Maciek","Monika","Monika","Marek","Monika","Adam","Monika","Marcin","Adam","Ewa","Marek","Monika","Monika","Maciek","Marcin","Karol","Ewa","Adam","Ewa","Maciek","Marek","Marek","Karol","Marcin","Monika","Adam","Karol","Adam","Monika","Maciek","Adam","Karol","Marek","Monika","Marek","Adam","Ewa","Monika","Adam","Monika","Maciek","Karol","Marcin","Maciek","Ewa","Monika","Monika","Maciek","Adam","Monika","Marek","Maciek","Ewa","Marcin","Monika",];
+export const data = [
+  {
+    id: 1,
+    name: "Maciek",
+    birth: "1976-06-10",
+    eyes: "brown"
+  },
+  {
+    id: 2,
+    name: "Ewa",
+    birth: "1983-10-31",
+    eyes: "gray"
+  },
+  {
+    id: 3,
+    name: "Maciek",
+    birth: "1984-12-11",
+    eyes: "green"
+  },
+  {
+    id: 4,
+    name: "Marek",
+    birth: "2009-06-13",
+    eyes: "green"
+  },
+  {
+    id: 5,
+    name: "Ewa",
+    birth: "2010-12-20",
+    eyes: "brown"
+  },
+  {
+    id: 6,
+    name: "Marek",
+    birth: "1985-05-15",
+    eyes: "green"
+  },
+  {
+    id: 7,
+    name: "Marcin",
+    birth: "1992-01-09",
+    eyes: "green"
+  },
+  {
+    id: 8,
+    name: "Adam",
+    birth: "2007-12-03",
+    eyes: "blue"
+  },
+  {
+    id: 9,
+    name: "Monika",
+    birth: "1982-02-16",
+    eyes: "gray"
+  },
+  {
+    id: 10,
+    name: "Adam",
+    birth: "1998-04-13",
+    eyes: "blue"
+  },
+];
