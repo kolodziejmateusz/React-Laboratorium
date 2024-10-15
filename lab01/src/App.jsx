@@ -27,7 +27,9 @@ function App() {
         </p>
       </div>
       <p className="read-the-docs">
-       {data[0]}
+        <p><strong>Name:</strong> {data[0].name}</p>
+        <p><strong>Birthdate:</strong> {data[0].birth}</p>
+        <p><strong>Eye Color:</strong> {data[0].eyes}</p>
       </p>
     </>
   )

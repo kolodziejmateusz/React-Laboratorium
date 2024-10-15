@@ -1,452 +1,602 @@
 export const data = [
   {
     id: 1,
-    name: "Wojciech",
-    birth: "1976-08-01",
-    eyes: "blue"
+    name: "Michał",
+    birth: "1994-01-23",
+    eyes: "brown"
   },
   {
     id: 2,
-    name: "Wojciech",
-    birth: "2009-05-31",
-    eyes: "gray"
+    name: "Piotr",
+    birth: "2000-06-06",
+    eyes: "green"
   },
   {
     id: 3,
-    name: "Agnieszka",
-    birth: "1982-06-06",
+    name: "Karol",
+    birth: "1977-01-07",
     eyes: "brown"
   },
   {
     id: 4,
-    name: "Michał",
-    birth: "1971-03-30",
+    name: "Adam",
+    birth: "1973-08-08",
     eyes: "gray"
   },
   {
     id: 5,
-    name: "Zofia",
-    birth: "1981-06-02",
-    eyes: "blue"
+    name: "Piotr",
+    birth: "1983-06-24",
+    eyes: "green"
   },
   {
     id: 6,
-    name: "Monika",
-    birth: "1981-08-23",
+    name: "Julia",
+    birth: "1997-08-26",
     eyes: "brown"
   },
   {
     id: 7,
-    name: "Julia",
-    birth: "1979-10-01",
-    eyes: "green"
+    name: "Ewa",
+    birth: "1977-03-11",
+    eyes: "blue"
   },
   {
     id: 8,
     name: "Julia",
-    birth: "1971-06-25",
-    eyes: "gray"
-  },
-  {
-    id: 9,
-    name: "Julia",
-    birth: "2010-07-28",
-    eyes: "green"
-  },
-  {
-    id: 10,
-    name: "Ewa",
-    birth: "1996-08-03",
+    birth: "2003-03-12",
     eyes: "brown"
   },
   {
-    id: 11,
+    id: 9,
     name: "Karol",
-    birth: "1985-09-09",
-    eyes: "gray"
+    birth: "1995-12-14",
+    eyes: "blue"
+  },
+  {
+    id: 10,
+    name: "Tomasz",
+    birth: "1993-07-22",
+    eyes: "blue"
+  },
+  {
+    id: 11,
+    name: "Zofia",
+    birth: "1972-07-25",
+    eyes: "blue"
   },
   {
     id: 12,
-    name: "Michał",
-    birth: "1985-06-24",
-    eyes: "blue"
+    name: "Piotr",
+    birth: "1989-10-21",
+    eyes: "green"
   },
   {
     id: 13,
-    name: "Marek",
-    birth: "1983-09-29",
-    eyes: "gray"
-  },
-  {
-    id: 14,
-    name: "Agnieszka",
-    birth: "1977-10-12",
-    eyes: "gray"
-  },
-  {
-    id: 15,
     name: "Tomasz",
-    birth: "1984-09-14",
+    birth: "1994-02-16",
     eyes: "blue"
   },
   {
+    id: 14,
+    name: "Anna",
+    birth: "2002-11-18",
+    eyes: "brown"
+  },
+  {
+    id: 15,
+    name: "Michał",
+    birth: "1975-04-24",
+    eyes: "gray"
+  },
+  {
     id: 16,
-    name: "Ewa",
-    birth: "2010-07-30",
+    name: "Karol",
+    birth: "1988-12-29",
     eyes: "gray"
   },
   {
     id: 17,
-    name: "Wojciech",
-    birth: "1993-06-27",
+    name: "Julia",
+    birth: "2004-03-29",
     eyes: "green"
   },
   {
     id: 18,
-    name: "Agnieszka",
-    birth: "2002-04-26",
-    eyes: "blue"
-  },
-  {
-    id: 19,
-    name: "Julia",
-    birth: "2005-02-24",
+    name: "Maciek",
+    birth: "2007-05-07",
     eyes: "brown"
   },
   {
-    id: 20,
-    name: "Tomasz",
-    birth: "2006-12-05",
-    eyes: "green"
-  },
-  {
-    id: 21,
-    name: "Piotr",
-    birth: "1970-04-08",
+    id: 19,
+    name: "Zofia",
+    birth: "1982-12-14",
     eyes: "gray"
   },
   {
-    id: 22,
-    name: "Ewa",
-    birth: "1974-08-07",
-    eyes: "green"
-  },
-  {
-    id: 23,
-    name: "Monika",
-    birth: "2001-09-23",
+    id: 20,
+    name: "Michał",
+    birth: "1972-07-20",
     eyes: "blue"
   },
   {
-    id: 24,
+    id: 21,
+    name: "Agnieszka",
+    birth: "1979-02-10",
+    eyes: "green"
+  },
+  {
+    id: 22,
+    name: "Adam",
+    birth: "1982-10-03",
+    eyes: "gray"
+  },
+  {
+    id: 23,
     name: "Ewa",
-    birth: "1975-01-01",
+    birth: "1996-09-11",
+    eyes: "gray"
+  },
+  {
+    id: 24,
+    name: "Katarzyna",
+    birth: "1975-09-27",
     eyes: "brown"
   },
   {
     id: 25,
-    name: "Monika",
-    birth: "1972-02-20",
+    name: "Anna",
+    birth: "1990-05-30",
     eyes: "brown"
   },
   {
     id: 26,
     name: "Krzysztof",
-    birth: "2005-04-13",
-    eyes: "gray"
+    birth: "1972-03-12",
+    eyes: "green"
   },
   {
     id: 27,
-    name: "Marek",
-    birth: "1981-10-18",
-    eyes: "brown"
+    name: "Tomasz",
+    birth: "2001-01-26",
+    eyes: "blue"
   },
   {
     id: 28,
-    name: "Karol",
-    birth: "2009-11-06",
-    eyes: "blue"
+    name: "Michał",
+    birth: "1992-07-10",
+    eyes: "gray"
   },
   {
     id: 29,
-    name: "Zofia",
-    birth: "1989-06-13",
-    eyes: "blue"
+    name: "Maciek",
+    birth: "2008-07-30",
+    eyes: "gray"
   },
   {
     id: 30,
-    name: "Ewa",
-    birth: "1999-09-11",
-    eyes: "brown"
+    name: "Krzysztof",
+    birth: "1982-06-23",
+    eyes: "blue"
   },
   {
     id: 31,
-    name: "Zofia",
-    birth: "2002-02-26",
+    name: "Wojciech",
+    birth: "1979-11-10",
     eyes: "green"
   },
   {
     id: 32,
-    name: "Maciek",
-    birth: "1986-07-11",
-    eyes: "green"
+    name: "Zofia",
+    birth: "2003-04-17",
+    eyes: "brown"
   },
   {
     id: 33,
-    name: "Wojciech",
-    birth: "1971-06-01",
-    eyes: "gray"
+    name: "Ewa",
+    birth: "1995-07-14",
+    eyes: "brown"
   },
   {
     id: 34,
-    name: "Piotr",
-    birth: "1983-03-21",
-    eyes: "blue"
+    name: "Adam",
+    birth: "2008-04-15",
+    eyes: "green"
   },
   {
     id: 35,
     name: "Anna",
-    birth: "1978-02-27",
-    eyes: "brown"
+    birth: "1982-08-05",
+    eyes: "green"
   },
   {
     id: 36,
-    name: "Wojciech",
-    birth: "1977-02-02",
+    name: "Monika",
+    birth: "2000-09-29",
     eyes: "green"
   },
   {
     id: 37,
-    name: "Adam",
-    birth: "2002-05-31",
-    eyes: "green"
+    name: "Marcin",
+    birth: "2004-01-01",
+    eyes: "brown"
   },
   {
     id: 38,
-    name: "Adam",
-    birth: "1989-08-02",
-    eyes: "gray"
+    name: "Ewa",
+    birth: "1982-06-29",
+    eyes: "blue"
   },
   {
     id: 39,
-    name: "Krzysztof",
-    birth: "1979-02-17",
-    eyes: "gray"
+    name: "Julia",
+    birth: "2007-06-05",
+    eyes: "brown"
   },
   {
     id: 40,
-    name: "Agnieszka",
-    birth: "1995-03-01",
+    name: "Anna",
+    birth: "1987-11-04",
     eyes: "blue"
   },
   {
     id: 41,
-    name: "Krzysztof",
-    birth: "2010-02-08",
-    eyes: "green"
-  },
-  {
-    id: 42,
-    name: "Zofia",
-    birth: "2007-06-07",
+    name: "Katarzyna",
+    birth: "1974-07-18",
     eyes: "gray"
   },
   {
+    id: 42,
+    name: "Ewa",
+    birth: "1986-05-18",
+    eyes: "blue"
+  },
+  {
     id: 43,
-    name: "Monika",
-    birth: "1976-01-04",
-    eyes: "brown"
+    name: "Anna",
+    birth: "1980-04-03",
+    eyes: "gray"
   },
   {
     id: 44,
-    name: "Marek",
-    birth: "1997-06-03",
+    name: "Anna",
+    birth: "2004-08-04",
     eyes: "brown"
   },
   {
     id: 45,
-    name: "Marcin",
-    birth: "1987-10-28",
-    eyes: "blue"
+    name: "Adam",
+    birth: "1986-04-02",
+    eyes: "brown"
   },
   {
     id: 46,
-    name: "Marcin",
-    birth: "1985-08-29",
-    eyes: "gray"
+    name: "Anna",
+    birth: "1976-11-07",
+    eyes: "blue"
   },
   {
     id: 47,
-    name: "Julia",
-    birth: "1978-07-10",
+    name: "Karol",
+    birth: "2006-10-28",
     eyes: "green"
   },
   {
     id: 48,
-    name: "Katarzyna",
-    birth: "2009-11-08",
-    eyes: "green"
+    name: "Krzysztof",
+    birth: "1992-05-16",
+    eyes: "brown"
   },
   {
     id: 49,
-    name: "Tomasz",
-    birth: "1975-12-31",
-    eyes: "blue"
+    name: "Marcin",
+    birth: "2000-07-24",
+    eyes: "green"
   },
   {
     id: 50,
-    name: "Maciek",
-    birth: "1998-04-30",
+    name: "Adam",
+    birth: "1977-08-18",
     eyes: "blue"
   },
   {
     id: 51,
-    name: "Krzysztof",
-    birth: "1971-05-20",
-    eyes: "brown"
+    name: "Anna",
+    birth: "2004-08-23",
+    eyes: "blue"
   },
   {
     id: 52,
-    name: "Karol",
-    birth: "1988-06-30",
-    eyes: "blue"
+    name: "Anna",
+    birth: "1971-12-31",
+    eyes: "brown"
   },
   {
     id: 53,
-    name: "Ewa",
-    birth: "2002-03-05",
-    eyes: "gray"
+    name: "Michał",
+    birth: "2008-07-09",
+    eyes: "green"
   },
   {
     id: 54,
-    name: "Piotr",
-    birth: "1984-10-06",
-    eyes: "blue"
+    name: "Ewa",
+    birth: "1982-09-06",
+    eyes: "green"
   },
   {
     id: 55,
-    name: "Adam",
-    birth: "2006-03-10",
+    name: "Ewa",
+    birth: "2003-10-04",
     eyes: "gray"
   },
   {
     id: 56,
-    name: "Wojciech",
-    birth: "2005-06-16",
-    eyes: "brown"
+    name: "Karol",
+    birth: "1991-04-05",
+    eyes: "gray"
   },
   {
     id: 57,
-    name: "Monika",
-    birth: "2004-07-01",
-    eyes: "brown"
+    name: "Marek",
+    birth: "1993-06-14",
+    eyes: "gray"
   },
   {
     id: 58,
-    name: "Zofia",
-    birth: "1976-08-25",
-    eyes: "brown"
-  },
-  {
-    id: 59,
-    name: "Wojciech",
-    birth: "1973-04-14",
-    eyes: "brown"
-  },
-  {
-    id: 60,
-    name: "Zofia",
-    birth: "1975-09-10",
-    eyes: "green"
-  },
-  {
-    id: 61,
     name: "Katarzyna",
-    birth: "1989-06-07",
-    eyes: "gray"
-  },
-  {
-    id: 62,
-    name: "Maciek",
-    birth: "1995-12-22",
-    eyes: "green"
-  },
-  {
-    id: 63,
-    name: "Marcin",
-    birth: "1985-12-14",
-    eyes: "brown"
-  },
-  {
-    id: 64,
-    name: "Monika",
-    birth: "2003-12-04",
+    birth: "2008-04-26",
     eyes: "blue"
   },
   {
-    id: 65,
-    name: "Katarzyna",
-    birth: "2003-06-12",
+    id: 59,
+    name: "Michał",
+    birth: "1986-02-20",
+    eyes: "blue"
+  },
+  {
+    id: 60,
+    name: "Maciek",
+    birth: "2001-07-07",
     eyes: "brown"
+  },
+  {
+    id: 61,
+    name: "Marek",
+    birth: "1975-06-07",
+    eyes: "green"
+  },
+  {
+    id: 62,
+    name: "Karol",
+    birth: "1989-02-09",
+    eyes: "brown"
+  },
+  {
+    id: 63,
+    name: "Ewa",
+    birth: "1972-04-11",
+    eyes: "blue"
+  },
+  {
+    id: 64,
+    name: "Katarzyna",
+    birth: "1984-04-09",
+    eyes: "brown"
+  },
+  {
+    id: 65,
+    name: "Krzysztof",
+    birth: "2003-10-06",
+    eyes: "blue"
   },
   {
     id: 66,
-    name: "Ewa",
-    birth: "1997-06-25",
-    eyes: "brown"
+    name: "Piotr",
+    birth: "1975-07-05",
+    eyes: "green"
   },
   {
     id: 67,
-    name: "Monika",
-    birth: "1977-03-04",
-    eyes: "gray"
+    name: "Anna",
+    birth: "2005-06-20",
+    eyes: "green"
   },
   {
     id: 68,
-    name: "Anna",
-    birth: "1974-08-02",
+    name: "Adam",
+    birth: "1985-11-10",
     eyes: "brown"
   },
   {
     id: 69,
-    name: "Karol",
-    birth: "1989-12-23",
-    eyes: "green"
+    name: "Anna",
+    birth: "1999-02-21",
+    eyes: "brown"
   },
   {
     id: 70,
     name: "Zofia",
-    birth: "1974-12-02",
-    eyes: "gray"
+    birth: "1976-02-26",
+    eyes: "green"
   },
   {
     id: 71,
-    name: "Maciek",
-    birth: "1981-11-23",
-    eyes: "gray"
+    name: "Anna",
+    birth: "1985-04-10",
+    eyes: "green"
   },
   {
     id: 72,
-    name: "Marek",
-    birth: "2001-01-29",
-    eyes: "brown"
+    name: "Julia",
+    birth: "2009-01-15",
+    eyes: "gray"
   },
   {
     id: 73,
-    name: "Monika",
-    birth: "1994-11-30",
-    eyes: "brown"
+    name: "Tomasz",
+    birth: "1992-10-02",
+    eyes: "blue"
   },
   {
     id: 74,
-    name: "Marcin",
-    birth: "2007-09-20",
+    name: "Krzysztof",
+    birth: "1998-06-23",
     eyes: "green"
   },
   {
     id: 75,
-    name: "Wojciech",
-    birth: "2006-02-25",
+    name: "Michał",
+    birth: "1975-10-16",
     eyes: "blue"
+  },
+  {
+    id: 76,
+    name: "Marek",
+    birth: "2008-02-12",
+    eyes: "blue"
+  },
+  {
+    id: 77,
+    name: "Katarzyna",
+    birth: "1978-07-11",
+    eyes: "brown"
+  },
+  {
+    id: 78,
+    name: "Krzysztof",
+    birth: "1985-08-19",
+    eyes: "gray"
+  },
+  {
+    id: 79,
+    name: "Adam",
+    birth: "1992-08-21",
+    eyes: "green"
+  },
+  {
+    id: 80,
+    name: "Monika",
+    birth: "1972-08-14",
+    eyes: "brown"
+  },
+  {
+    id: 81,
+    name: "Marek",
+    birth: "2008-01-12",
+    eyes: "blue"
+  },
+  {
+    id: 82,
+    name: "Julia",
+    birth: "2006-12-09",
+    eyes: "green"
+  },
+  {
+    id: 83,
+    name: "Krzysztof",
+    birth: "1993-03-17",
+    eyes: "brown"
+  },
+  {
+    id: 84,
+    name: "Michał",
+    birth: "2005-08-31",
+    eyes: "blue"
+  },
+  {
+    id: 85,
+    name: "Ewa",
+    birth: "1983-12-02",
+    eyes: "blue"
+  },
+  {
+    id: 86,
+    name: "Wojciech",
+    birth: "1985-03-08",
+    eyes: "blue"
+  },
+  {
+    id: 87,
+    name: "Tomasz",
+    birth: "1973-01-19",
+    eyes: "brown"
+  },
+  {
+    id: 88,
+    name: "Tomasz",
+    birth: "1983-09-16",
+    eyes: "green"
+  },
+  {
+    id: 89,
+    name: "Piotr",
+    birth: "1977-01-04",
+    eyes: "brown"
+  },
+  {
+    id: 90,
+    name: "Ewa",
+    birth: "1993-12-28",
+    eyes: "brown"
+  },
+  {
+    id: 91,
+    name: "Zofia",
+    birth: "2004-09-04",
+    eyes: "green"
+  },
+  {
+    id: 92,
+    name: "Tomasz",
+    birth: "1970-06-07",
+    eyes: "brown"
+  },
+  {
+    id: 93,
+    name: "Karol",
+    birth: "1995-07-01",
+    eyes: "green"
+  },
+  {
+    id: 94,
+    name: "Katarzyna",
+    birth: "1989-03-26",
+    eyes: "gray"
+  },
+  {
+    id: 95,
+    name: "Krzysztof",
+    birth: "1979-06-24",
+    eyes: "gray"
+  },
+  {
+    id: 96,
+    name: "Zofia",
+    birth: "2005-01-16",
+    eyes: "brown"
+  },
+  {
+    id: 97,
+    name: "Michał",
+    birth: "2010-01-22",
+    eyes: "gray"
+  },
+  {
+    id: 98,
+    name: "Piotr",
+    birth: "1976-04-19",
+    eyes: "gray"
+  },
+  {
+    id: 99,
+    name: "Piotr",
+    birth: "2006-02-03",
+    eyes: "brown"
+  },
+  {
+    id: 100,
+    name: "Wojciech",
+    birth: "1998-05-17",
+    eyes: "brown"
   },
 ];
