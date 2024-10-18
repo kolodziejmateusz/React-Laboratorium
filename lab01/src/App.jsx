@@ -3,9 +3,11 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import {data} from '../module-data.js';
+import { PersonProfile } from './components/PersonProfile.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
+  
 
   return (
     <>
@@ -31,6 +33,10 @@ function App() {
         <p><strong>Birthdate:</strong> {data[0].birth}</p>
         <p><strong>Eye Color:</strong> {data[0].eyes}</p>
       </p>
+      
+      <PersonProfile person={data[0]}/>
+      <PersonProfile person={data[10]}/>
+      <PersonProfile person={data[50]}/>
     </>
   )
 }
