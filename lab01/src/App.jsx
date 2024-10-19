@@ -1,16 +1,18 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
-import { data } from "./data/module-data.js";
-import { PersonProfile } from "./components/PersonProfile.jsx";
+// import { useState } from "react";
+// import reactLogo from "./assets/react.svg";
+// import viteLogo from "/vite.svg";
+// import { data } from "./data/module-data.js";
+// import { PersonProfile } from "./components/PersonProfile.jsx";
+import RootLayout from "./layouts/RootLayout.jsx";
+import { Route, Routes } from "react-router-dom";
+import Lab1Page from "./pages/Lab1Page.jsx";
 
 function App() {
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
 
   return (
     <>
-      <div>
+      {/* <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -40,13 +42,20 @@ function App() {
         <p>
           <strong>Eye Color:</strong> {data[0].eyes}
         </p>
-      </p>
+      </p> */}
+
+      <RootLayout>
+        <Routes>
+          <Route path="/lab1" element={<Lab1Page />} />
+          <Route path="/lab2" element={<h1>Laboratorium 2</h1>} />
+        </Routes>
+      </RootLayout>
       {/* <PersonProfile person={data[0]} />
       <PersonProfile person={data[10]} />
       <PersonProfile person={data[50]} /> */}
-      {data.map((person) => (
+      {/* {data.map((person) => (
         <PersonProfile key={person.id} person={person} />
-      ))}
+      ))} */}
     </>
   );
 }
