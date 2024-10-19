@@ -13,7 +13,7 @@ function randomEyeColor() {
     return eyeColors[Math.floor(Math.random() * eyeColors.length)];
 }
 
-fs.readFile('./src/generators/names.txt', 'utf8', (err, data) => {
+fs.readFile('./src/data/names.txt', 'utf8', (err, data) => {
     if (err) {
         console.error(err);
         return;
@@ -42,7 +42,7 @@ fs.readFile('./src/generators/names.txt', 'utf8', (err, data) => {
     content += "\n];";
 
     //zapis łańcucha do pliku
-    fs.writeFile('./src/generators/module-data.js', content, (err) => {
+    fs.writeFile('./src/data/module-data.js', content, (err) => {
         if (err) {
             console.error(err);
         }
