@@ -8,11 +8,17 @@ import Err404 from "./pages/Err404.jsx";
 
 function App() {
   const menuItems = [
-    { id: 1, label: "Home", href: "", element: <HomePage /> },
-    { id: 2, label: "Laboratorium 1", href: "lab1", element: <Lab1Page /> },
-    { id: 3, label: "Laboratorium 2", href: "lab2", element: <Lab2Page /> },
-    { id: 4, label: "Laboratorium 3", href: "lab3", element: <HomePage /> },
-    { id: 5, label: "Err404", href: "*", element: <Err404 /> },
+    { id: 1, label: "Home", url: "", element: <HomePage /> },
+    { id: 2, label: "Laboratorium 1", url: "lab1", element: <Lab1Page /> },
+    {
+      id: 3,
+      label: "Laboratorium 2",
+      url: "lab2/1",
+      urlPattern: "/lab2/:id",
+      element: <Lab2Page />,
+    },
+    { id: 4, label: "Laboratorium 3", url: "lab3", element: <HomePage /> },
+    { id: 5, label: "Err404", url: "*", element: <Err404 /> },
   ];
 
   return (
@@ -22,10 +28,11 @@ function App() {
           {menuItems.map((item) => (
             <Route
               key={item.id}
-              path={`/${item.href}`}
+              path={item.urlPattern || `/${item.url}`}
               element={item.element}
             />
           ))}
+          <Route path="/lab2" element={<Lab2Page />} />
         </Routes>
       </RootLayout>
     </>

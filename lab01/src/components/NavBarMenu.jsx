@@ -11,7 +11,7 @@ export const NavBarMenu = ({ items }) => (
         <Nav className="me-auto">
           <Nav className="me-auto">
             {items.map((item) => (
-              <Nav.Link key={item.id} href={`/${item.href}`}>
+              <Nav.Link key={item.id} href={`/${item.url}`}>
                 {item.label}
               </Nav.Link>
             ))}
