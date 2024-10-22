@@ -11,7 +11,6 @@ function Lab1Page() {
       {data.map((person) => (
         <PersonProfile key={person.id} person={person} />
       ))}
-      {/* tu co było na lab1 */}
     </>
   );
 }

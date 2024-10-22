@@ -1,25 +1,20 @@
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-// import NavDropdown from "react-bootstrap/NavDropdown";
+import { NavBarMenu } from "../components/NavBarMenu";
+import { Footer } from "../components/Footer";
 
 function RootLayout({ children }) {
+  const menuItems = [
+    { id: 1, label: "Home", href: "" },
+    { id: 2, label: "Laboratorium 1", href: "lab1" },
+    { id: 3, label: "Laboratorium 2", href: "lab2" },
+    { id: 3, label: "Laboratorium 3", href: "lab3" },
+  ];
   return (
     <>
-      <Navbar expand="lg" className="bg-body-tertiary">
-        <Container>
-          <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link href="/lab1">Laboratorium 1</Nav.Link>
-              <Nav.Link href="/lab2">Laboratorium 2</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-      <Container>{children}</Container>
-      <footer>Mateusz Kołodziej</footer>
+      <div>
+        <NavBarMenu items={menuItems} />
+        <main style={{ padding: "20px" }}>{children}</main>
+        <Footer />
+      </div>
     </>
   );
 }
