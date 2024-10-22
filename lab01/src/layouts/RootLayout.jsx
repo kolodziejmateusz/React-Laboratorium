@@ -19,6 +19,7 @@ function RootLayout({ children }) {
         </Container>
       </Navbar>
       <Container>{children}</Container>
+      <footer>Mateusz Kołodziej</footer>
     </>
   );
 }
