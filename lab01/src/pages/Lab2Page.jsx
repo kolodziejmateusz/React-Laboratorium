@@ -1,7 +1,7 @@
 function Lab2Page() {
   return (
     <>
-      <h1>Zawartość Laboratorium2 z pliku</h1>
+      <h1>Profil osoby</h1>
     </>
   );
 }
