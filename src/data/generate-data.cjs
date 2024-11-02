@@ -1,51 +1,62 @@
-const fs = require('fs');
+const fs = require("fs");
 
 const count = Number(process.argv[2]); // odczyt liczby obiektów
-let names = [];                        // tablica z obiektami
+let names = []; // tablica z obiektami
 
 function randomDate(start, end) {
-    let date = new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
-    return date.toISOString().split('T')[0];
+  let date = new Date(
+    start.getTime() + Math.random() * (end.getTime() - start.getTime())
+  );
+  return date.toISOString().split("T")[0];
 }
 
 function randomEyeColor() {
-    const eyeColors = ["blue", "brown", "green", "gray"];
-    return eyeColors[Math.floor(Math.random() * eyeColors.length)];
+  const eyeColors = ["blue", "brown", "green", "gray"];
+  return eyeColors[Math.floor(Math.random() * eyeColors.length)];
 }
 
-fs.readFile('./src/data/names.txt', 'utf8', (err, data) => {
-    if (err) {
-        console.error(err);
-        return;
-    }
+function randomRating() {
+  return Math.floor(Math.random() * 10) + 1;
+}
 
-    //podział łańcucha z imionami na wiersze.
-    names = data.split("\n").map(s => s.trim()).filter(n => n.length != 0);
-    console.log(names);
+fs.readFile("./src/data/names.txt", "utf8", (err, data) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
 
-    let content = "export const data = [";
-    for(let i = 0; i < count; i++){
-        const id = i + 1;
-        const name = names[Math.floor(Math.random() * names.length)];
-        const birth = randomDate(new Date(1970, 0, 1), new Date(2010, 11, 31));
-        const eyes = randomEyeColor();
-        
-        content += `
+  //podział łańcucha z imionami na wiersze.
+  names = data
+    .split("\n")
+    .map((s) => s.trim())
+    .filter((n) => n.length != 0);
+  console.log(names);
+
+  let content = "export const data = [";
+  for (let i = 0; i < count; i++) {
+    const id = i + 1;
+    const name = names[Math.floor(Math.random() * names.length)];
+    const birth = randomDate(new Date(1970, 0, 1), new Date(2010, 11, 31));
+    const eyes = randomEyeColor();
+    const rating = randomRating();
+
+    content += `
   {
     id: ${id},
     name: "${name}",
     birth: "${birth}",
-    eyes: "${eyes}"
+    eyes: "${eyes}",
+    rating: ${rating}
   },`;
+  }
+
+  content += "\n];";
+
+  //zapis łańcucha do pliku
+  fs.writeFile("./src/data/module-data.js", content, (err) => {
+    if (err) {
+      console.error(err);
     }
-
-    content += "\n];";
-
-    //zapis łańcucha do pliku
-    fs.writeFile('./src/data/module-data.js', content, (err) => {
-        if (err) {
-            console.error(err);
-        }
-        console.log("module-data.js generated");
-    });
+    console.log("module-data.js generated");
+  });
 });

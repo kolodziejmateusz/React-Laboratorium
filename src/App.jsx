@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage.jsx";
 import Lab1Page from "./pages/Lab1Page.jsx";
 import Lab2Page from "./pages/Lab2Page.jsx";
+import Lab3Page from "./pages/Lab3Page.jsx";
 import Err404 from "./pages/Err404.jsx";
 // import PeoplePage from "./pages/PeoplePage.jsx";
 
@@ -17,7 +18,7 @@ function App() {
       urlPattern: "/lab2/:id",
       element: <Lab2Page />,
     },
-    { id: 4, label: "Laboratorium 3", url: "lab3", element: <HomePage /> },
+    { id: 4, label: "Laboratorium 3", url: "lab3", element: <Lab3Page /> },
     { id: 5, label: "Err404", url: "*", element: <Err404 /> },
   ];
 
