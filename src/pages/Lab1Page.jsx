@@ -1,6 +1,3 @@
-// const NameItem = ({name, id}) => <li key={id}>{name}</li>
-// import {names} from '../data/module-data'
-
 import { data } from "../data/module-data.js";
 import { PersonProfile } from "../components/PersonProfile.jsx";
 
