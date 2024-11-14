@@ -1,9 +1,7 @@
-const FlexContainer = ({ element: Element, data }) => {
+const FlexContainer = ({ element, data }) => {
   return (
-    <div className="d-flex flex-wrap">
-      {data.map((person) => (
-        <Element key={person.id} person={person} className="m-3" />
-      ))}
+    <div className="d-flex flex-wrap mt-3">
+      {data.map((e) => element({ ...e }))}
     </div>
   );
 };

@@ -1,11 +1,15 @@
 import { Card } from "react-bootstrap";
-import { PersonProfile } from "../components/PersonProfile.jsx";
 
-function ProfileCard({ person, className }) {
+function ProfileCard({ id, name, rating, eyes }) {
   return (
-    <Card style={{ width: "18rem" }} className={`border mb-3 p-3 ${className}`}>
+    // const [rate, setRate] = useState(rating)
+
+    <Card style={{ width: "18rem" }} className={`border mb-3 p-3`}>
       <Card.Body>
-        <PersonProfile person={person} />
+        <Card.Title>{name}</Card.Title>
+        <Card.Body>
+          {id},{eyes},{rating}
+        </Card.Body>
       </Card.Body>
     </Card>
   );
