@@ -1,7 +1,11 @@
+import { useReducer } from "react";
+import AppReducer from "../data/AppReducer";
+
 const FlexContainer = ({ element, data }) => {
+  const [items, dispatch] = useReducer(AppReducer, data);
   return (
     <div className="d-flex flex-wrap mt-3">
-      {data.map((e) => element({ ...e }))}
+      {items.map((e) => element({ ...e, dispatch }))}
     </div>
   );
 };

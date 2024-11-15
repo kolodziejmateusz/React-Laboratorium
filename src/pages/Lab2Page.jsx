@@ -1,5 +1,6 @@
 import { data } from "../data/module-data";
 import { useParams } from "react-router-dom";
+import Licznik from "../components/Licznik.jsx";
 
 function Lab2Page() {
   const { id } = useParams();
@@ -29,6 +30,7 @@ function Lab2Page() {
       <h2>Imię: {person.name}</h2>
       <h3>Data urodzenia: {person.birth}</h3>
       <h4>Kolor oczu: {person.eyes}</h4>
+      <Licznik />
     </>
   );
 }
