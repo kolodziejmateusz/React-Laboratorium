@@ -7,10 +7,9 @@ import Lab3Page from "./pages/Lab3Page.jsx";
 import Lab4Page from "./pages/Lab4Page.jsx";
 import Err404 from "./pages/Err404.jsx";
 import AppContext from "./data/AppContext.jsx";
-import { useState, useReducer } from "react";
+import { useReducer } from "react";
 import { data } from "./data/module-data.js";
 import AppReducer from "./data/AppReducer.js";
-// import PeoplePage from "./pages/PeoplePage.jsx";
 
 function App() {
   const menuItems = [
@@ -28,7 +27,6 @@ function App() {
     { id: 6, label: "Err404", url: "*", element: <Err404 /> },
   ];
 
-  const [count, setCount] = useState(0);
   const [state, appDispatch] = useReducer(AppReducer, data);
 
   return (
