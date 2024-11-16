@@ -1,11 +1,15 @@
-import { useReducer } from "react";
+import { useContext, useReducer } from "react";
 import AppReducer from "../data/AppReducer";
+import AppContext from "../data/AppContext";
 
-const FlexContainer = ({ element, data }) => {
-  const [items, dispatch] = useReducer(AppReducer, data);
+const FlexContainer = ({ element }) => {
+  // const [items, dispatch] = useReducer(AppReducer, data);
+  const context = useContext(AppContext);
+  const dispatch = context.dispatch;
+  const data = context.items;
   return (
     <div className="d-flex flex-wrap mt-3">
-      {items.map((e) => element({ ...e, dispatch }))}
+      {data.map((e) => element({ ...e, dispatch }))}
     </div>
   );
 };

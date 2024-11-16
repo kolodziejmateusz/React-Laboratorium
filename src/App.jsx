@@ -6,6 +6,10 @@ import Lab2Page from "./pages/Lab2Page.jsx";
 import Lab3Page from "./pages/Lab3Page.jsx";
 import Lab4Page from "./pages/Lab4Page.jsx";
 import Err404 from "./pages/Err404.jsx";
+import AppContext from "./data/AppContext.jsx";
+import { useState, useReducer } from "react";
+import { data } from "./data/module-data.js";
+import AppReducer from "./data/AppReducer.js";
 // import PeoplePage from "./pages/PeoplePage.jsx";
 
 function App() {
@@ -24,20 +28,25 @@ function App() {
     { id: 6, label: "Err404", url: "*", element: <Err404 /> },
   ];
 
+  const [count, setCount] = useState(0);
+  const [state, appDispatch] = useReducer(AppReducer, data);
+
   return (
     <>
-      <RootLayout menuItems={menuItems}>
-        <Routes>
-          {menuItems.map((item) => (
-            <Route
-              key={item.id}
-              path={item.urlPattern || `/${item.url}`}
-              element={item.element}
-            />
-          ))}
-          <Route path="/lab2" element={<Lab2Page />} />
-        </Routes>
-      </RootLayout>
+      <AppContext.Provider value={{ items: state, dispatch: appDispatch }}>
+        <RootLayout menuItems={menuItems}>
+          <Routes>
+            {menuItems.map((item) => (
+              <Route
+                key={item.id}
+                path={item.urlPattern || `/${item.url}`}
+                element={item.element}
+              />
+            ))}
+            <Route path="/lab2" element={<Lab2Page />} />
+          </Routes>
+        </RootLayout>
+      </AppContext.Provider>
     </>
   );
 }
