@@ -1,4 +1,3 @@
-// import { data } from "../data/module-data.js";
 import FlexContainer from "../components/FlexContainer.jsx";
 import ProfileCard from "../components/ProfileCard.jsx";
 

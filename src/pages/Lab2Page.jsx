@@ -1,11 +1,14 @@
-import { data } from "../data/module-data";
 import { useParams } from "react-router-dom";
 import Licznik from "../components/Licznik.jsx";
 import TodoList from "../components/TodoList.jsx";
 import TodoApp from "../components/TodoApp.jsx";
+import { useContext } from "react";
+import AppContext from "../data/AppContext";
 
 function Lab2Page() {
   const { id } = useParams();
+  const context = useContext(AppContext);
+  const data = context.items;
   const person = data.find((person) => person.id == id);
 
   if (!id) {
