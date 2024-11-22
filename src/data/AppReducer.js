@@ -15,6 +15,10 @@ export default function AppReducer(state, action) {
       console.log("Delete");
       return state.filter((i) => i.id !== action.id);
 
+    case "add":
+      console.log("Add", action.payload);
+      return [...state, action.payload];
+
     default:
       return state;
   }

@@ -11,6 +11,7 @@ import { useReducer } from "react";
 import { data } from "./data/module-data.js";
 import AppReducer from "./data/AppReducer.js";
 import CreateForm from "./components/CreateForm.jsx";
+import EditForm from "./components/EditForm.jsx";
 
 function App() {
   const menuItems = [
@@ -43,8 +44,8 @@ function App() {
               />
             ))}
             <Route path="/lab2" element={<Lab2Page />} />
-            {/* <Route path="/lab4/edit" element={<EditForm />} /> */}
             <Route path="/lab4/add" element={<CreateForm />} />
+            <Route path="/lab4/edit" element={<EditForm />} />
           </Routes>
         </RootLayout>
       </AppContext.Provider>
