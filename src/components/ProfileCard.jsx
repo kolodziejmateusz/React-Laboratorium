@@ -1,8 +1,10 @@
 import { Button, Card } from "react-bootstrap";
 // import { useState } from "react";
 import RatingBar from "./RatingBar";
+import { useNavigate } from "react-router-dom";
 
 function ProfileCard({ id, name, eyes, birth, rating, dispatch }) {
+  const navigate = useNavigate();
   // const [rate, setRate] = useState(rating);
   return (
     <Card
@@ -21,7 +23,7 @@ function ProfileCard({ id, name, eyes, birth, rating, dispatch }) {
         <Button
           variant="primary"
           onClick={() => {
-            dispatch({ type: "edit", id: id });
+            navigate(`/lab4/edit/${id}`);
           }}
         >
           Edit

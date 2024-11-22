@@ -10,7 +10,3 @@ function Lab4Page() {
 }
 
 export default Lab4Page;
-
-// formularz do dodawania dokończyć
-// zrobić formularz do edycji
-// jakaś strona do robirnia formularzy

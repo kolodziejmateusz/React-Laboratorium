@@ -1,8 +1,11 @@
 export default function AppReducer(state, action) {
   switch (action.type) {
     case "edit":
-      console.log("Edit");
-      return state;
+      console.log("Edit action payload:", action.payload);
+
+      return state.map((item) =>
+        item.id === action.payload.id ? { ...item, ...action.payload } : item
+      );
 
     case "rate": {
       console.log("Rate");
